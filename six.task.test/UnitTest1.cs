@@ -26,11 +26,16 @@ public class UnitTest1
     [TestMethod]
     public void TestMethod2()
     {
-        int OccupiedPlace = 20;
         int VolumeLiters = 50;
-        
+        int OccupiedPlace = 20;
+        int TimeOfWork = 24;
+        int BoilingTime = 10;
+        int Kilometes = 15;
+        int PaymentForGasoline = 45;
 
-        DeliveryProcess classObject = new DeliveryProcess(OccupiedPlace, VolumeLiters);
+
+
+        DeliveryProcess classObject = new DeliveryProcess(VolumeLiters, OccupiedPlace, TimeOfWork, BoilingTime, Kilometes, PaymentForGasoline);
 
         double expected = 30;
         double actual = classObject.printplace();
@@ -39,22 +44,87 @@ public class UnitTest1
 
     }
 
-    //[TestMethod]
-    //public void TestMethod3()
-    //{
-    //    int OccupiedPlace = 20;
-    //    int VolumeLiters = 50;
-    //    int TimeOfWork = 24;
-    //    int BoilingTime = 100;
+    [TestMethod]
+    public void TestMethod3()
+    {
+        int VolumeLiters = 50;
+        int OccupiedPlace = 20;
+        int TimeOfWork = 24;
+        int BoilingTime = 10;
+        int Kilometes = 15;
+        int PaymentForGasoline = 45;
 
-    //    DeliveryProcess classObject = new DeliveryProcess(OccupiedPlace, VolumeLiters, TimeOfWork, BoilingTime);
 
-    //    double expected = 120;
-    //    double actual = classObject.printtime();
 
-    //    Assert.AreEqual(expected, actual);
+        DeliveryProcess classObject = new DeliveryProcess(VolumeLiters, OccupiedPlace, TimeOfWork, BoilingTime, Kilometes, PaymentForGasoline);
 
-    //}
+        double expected = 120;
+        double actual = classObject.printtime();
+
+        Assert.AreEqual(expected, actual);
+
+    }
+
+    [TestMethod]
+    public void TestMethod4()
+    {
+        int VolumeLiters = 50;
+        int OccupiedPlace = 20;
+        int TimeOfWork = 24;
+        int BoilingTime = 10;
+        int Kilometes = 15;
+        int PaymentForGasoline = 45;
+
+
+
+        DeliveryProcess classObject = new DeliveryProcess(VolumeLiters, OccupiedPlace, TimeOfWork, BoilingTime, Kilometes, PaymentForGasoline);
+
+        double expected = 675;
+        double actual = classObject.printpayment();
+
+        Assert.AreEqual(expected, actual);
+
+    }
+
+    [TestMethod]
+    public void TestMethod5()
+    {
+        int VolumeLiters = 50;
+        int OccupiedPlace = 20;
+        int TimeOfWork = 24;
+        int BoilingTime = 10;
+        int Kilometes = 15;
+        int PaymentForGasoline = 45;
+
+
+        DeliveryProcess classObject = new DeliveryProcess(VolumeLiters, OccupiedPlace, TimeOfWork, BoilingTime, Kilometes, PaymentForGasoline);
+
+        double expected = 2400;
+        double actual = classObject.printsalary();
+
+        Assert.AreEqual(expected, actual);
+
+    }
+
+    [TestMethod]
+    public void TestMethod6()
+    {
+        int VolumeLiters = 50;
+        int OccupiedPlace = 20;
+        int TimeOfWork = 24;
+        int BoilingTime = 10;
+        int Kilometes = 15;
+        int PaymentForGasoline = 45;
+
+
+        DeliveryProcess classObject = new DeliveryProcess(VolumeLiters, OccupiedPlace, TimeOfWork, BoilingTime, Kilometes, PaymentForGasoline);
+
+        double expected = 2;
+        double actual = classObject.printtimeforlunch();
+
+        Assert.AreEqual(expected, actual);
+
+    }
 
 
 }

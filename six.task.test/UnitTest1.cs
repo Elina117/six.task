@@ -22,7 +22,7 @@ public class UnitTest1
 
     }
 
-    //
+    
     [TestMethod]
     public void TestMethod2()
     {
@@ -126,5 +126,197 @@ public class UnitTest1
 
     }
 
+    [TestMethod]
+    public void TestMethod7()
+    {
+        int VolumeLiters = 50;
+        int BoilingTime = 10;
+        int MaxTemp = 500;
+        int ValumeOfBottle = 20;
+        int MeltingPoint = 50;
 
+
+        Boiling classObject = new Boiling(VolumeLiters, MaxTemp, ValumeOfBottle, BoilingTime, MeltingPoint);
+
+        double expected = 125;
+        double actual = classObject.printneedtemp();
+
+        Assert.AreEqual(expected, actual);
+
+    }
+
+    [TestMethod]
+    public void TestMethod8()
+    {
+        int VolumeLiters = 50;
+        int BoilingTime = 10;
+        int MaxTemp = 500;
+        int ValumeOfBottle = 20;
+        int MeltingPoint = 50;
+
+
+        Boiling classObject = new Boiling(VolumeLiters, MaxTemp, ValumeOfBottle, BoilingTime, MeltingPoint);
+
+        double expected = 0; //10
+        double actual = classObject.printneedtime();
+
+        Assert.AreEqual(expected, actual);
+
+    }
+
+    [TestMethod]
+    public void TestMethod9()
+    {
+        int VolumeLiters = 50;
+        int BoilingTime = 10;
+        int MaxTemp = 500;
+        int ValumeOfBottle = 20;
+        int MeltingPoint = 50;
+
+
+        Boiling classObject = new Boiling(VolumeLiters, MaxTemp, ValumeOfBottle, BoilingTime, MeltingPoint);
+
+        double expected = 7;
+        double actual = classObject.printvolume();
+
+        Assert.AreEqual(expected, actual);
+
+    }
+
+    [TestMethod]
+    public void TestMethod10()
+    {
+        int VolumeLiters = 50;
+        int BoilingTime = 10;
+        int MaxTemp = 500;
+        int ValumeOfBottle = 20;
+        int MeltingPoint = 50;
+
+
+        Boiling classObject = new Boiling(VolumeLiters, MaxTemp, ValumeOfBottle, BoilingTime, MeltingPoint);
+
+        double expected = 5;
+        double actual = classObject.printnumberofbatches();
+
+        Assert.AreEqual(expected, actual);
+
+    }
+
+    [TestMethod]
+    public void TestMethod11()
+    {
+        int VolumeLiters = 50;
+        int BoilingTime = 10;
+        int MaxTemp = 500;
+        int ValumeOfBottle = 20;
+        int MeltingPoint = 50;
+
+
+        Boiling classObject = new Boiling(VolumeLiters, MaxTemp, ValumeOfBottle, BoilingTime, MeltingPoint);
+
+        double expected = 8;
+        double actual = classObject.printcoolingdown();
+
+        Assert.AreEqual(expected, actual);
+
+    }
+
+
+
+
+
+    [TestMethod]
+    public void TestMethod12()
+    {
+        int NumberOfLiters = 100;
+        int NumberOfBottle = 10;
+        int PriceOfBottle = 20;
+        int NumberOfEmployee = 300;
+        int ValumeBottle = 50;
+
+
+        Pour classObject = new Pour(NumberOfLiters, NumberOfBottle, PriceOfBottle, NumberOfEmployee, ValumeBottle);
+
+        double expected = 2;
+        double actual = classObject.printnumberbottle();
+
+        Assert.AreEqual(expected, actual);
+
+    }
+
+    [TestMethod]
+    public void TestMethod13()
+    {
+        int NumberOfLiters = 100;
+        int NumberOfBottle = 10;
+        int PriceOfBottle = 20;
+        int NumberOfEmployee = 300;
+        int ValumeBottle = 50;
+
+
+        Pour classObject = new Pour(NumberOfLiters, NumberOfBottle, PriceOfBottle, NumberOfEmployee, ValumeBottle);
+
+        double expected = 98;
+        double actual = classObject.printdidntused();
+
+        Assert.AreEqual(expected, actual);
+
+    }
+
+    [TestMethod]
+    public void TestMethod14()
+    {
+        int NumberOfLiters = 100;
+        int NumberOfBottle = 10;
+        int PriceOfBottle = 20;
+        int NumberOfEmployee = 300;
+        int ValumeBottle = 50;
+
+
+        Pour classObject = new Pour(NumberOfLiters, NumberOfBottle, PriceOfBottle, NumberOfEmployee, ValumeBottle);
+
+        double expected = 10;
+        double actual = classObject.printdefective();
+
+        Assert.AreEqual(expected, actual);
+
+    }
+
+    [TestMethod]
+    public void TestMethod15()
+    {
+        int NumberOfLiters = 100;
+        int NumberOfBottle = 10;
+        int PriceOfBottle = 20;
+        int NumberOfEmployee = 300;
+        int ValumeBottle = 50;
+
+
+        Pour classObject = new Pour(NumberOfLiters, NumberOfBottle, PriceOfBottle, NumberOfEmployee, ValumeBottle);
+
+        double expected = 290;
+        double actual = classObject.printdrinked();
+
+        Assert.AreEqual(expected, actual);
+
+    }
+
+    [TestMethod]
+    public void TestMethod16()
+    {
+        int NumberOfLiters = 100;
+        int NumberOfBottle = 10;
+        int PriceOfBottle = 20;
+        int NumberOfEmployee = 300;
+        int ValumeBottle = 50;
+
+
+        Pour classObject = new Pour(NumberOfLiters, NumberOfBottle, PriceOfBottle, NumberOfEmployee, ValumeBottle);
+
+        double expected = 40;
+        double actual = classObject.printtimeforpour();
+
+        Assert.AreEqual(expected, actual);
+
+    }
 }

@@ -40,8 +40,6 @@ namespace SixTaskDraft
 
         }
         
-
-
         public double printplace() // свободное место
         {
             double EmptyPlace = VolumeLiters - OccupiedPlace;
@@ -80,6 +78,61 @@ namespace SixTaskDraft
     }
 
 
+
+
+
+
+
+
+
+    public class Boiling : Manufacturingprocess
+    {
+        int MaxTemp;
+        int ValumeOfBottle;
+        int MeltingPoint;
+
+        public Boiling(int VolumeLiters, int BoilingTime, int MaxTemp, int ValumeOfBottle, int MeltingPoint) : base(VolumeLiters, BoilingTime)
+        {
+            this.MaxTemp = MaxTemp;
+            this.ValumeOfBottle = ValumeOfBottle;
+            this.MeltingPoint = MeltingPoint;
+        }
+            
+        public double printneedtemp() //нужная температура
+        {
+            double temp = (MeltingPoint * VolumeLiters) / MaxTemp;
+
+            return temp;
+        }
+
+        public double printneedtime() //необходимое время
+        {
+            double time = MaxTemp / MeltingPoint;
+
+            return time;
+        }
+
+        public double printvolume() //объем за один заход
+        {
+            double volume = ValumeOfBottle - 3;
+
+            return volume;
+        }
+
+        public double printnumberofbatches()//количество партий
+        {
+            double batches = VolumeLiters / ValumeOfBottle;
+
+            return batches;
+        }
+
+        public double printcoolingdown()//время остывания
+        {
+            double coolingdown = (MaxTemp - 2) - ValumeOfBottle;
+
+            return coolingdown;
+        }
+    }
 
 
 }

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1703.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SixTaskDraft", "SixTaskDraft.csproj", "{3FB574A1-878C-4DBB-8696-3DC6F82F8225}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SixTaskTestDraft", "..\six.task.test\SixTaskTestDraft.csproj", "{60F5A963-7CDE-488A-A401-4F654283936B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3FB574A1-878C-4DBB-8696-3DC6F82F8225}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FB574A1-878C-4DBB-8696-3DC6F82F8225}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FB574A1-878C-4DBB-8696-3DC6F82F8225}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FB574A1-878C-4DBB-8696-3DC6F82F8225}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60F5A963-7CDE-488A-A401-4F654283936B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60F5A963-7CDE-488A-A401-4F654283936B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60F5A963-7CDE-488A-A401-4F654283936B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60F5A963-7CDE-488A-A401-4F654283936B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5CDE8722-B328-4D4B-8B8F-0B3975564F05}
+	EndGlobalSection
+EndGlobal

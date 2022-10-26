@@ -66,5 +66,14 @@ namespace SixTaskDraft
             return pourtime;
         }
     }
+
+
+
+    public class Sale
+    {
+        public int price;
+
+        public Sale(int NumberOfLiters, int NumberOfBottle, int price)
+    }
 }
 

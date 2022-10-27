@@ -6,7 +6,7 @@ namespace SixTaskDraft
     {
         static void Main(string[] args)
         {
-
+           
         }
     }
 }

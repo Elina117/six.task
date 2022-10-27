@@ -319,4 +319,102 @@ public class UnitTest1
         Assert.AreEqual(expected, actual);
 
     }
+
+    [TestMethod]
+    public void TestMethod17()
+    {
+        int NumberOfLiters = 100;
+        int NumberOfBottle = 10;
+        int Price = 20;
+        int NumberOfEmployee = 300;
+        int Volumeone = 10;
+
+
+        Sale classObject = new Sale(NumberOfLiters, NumberOfBottle, Price, NumberOfEmployee, Volumeone);
+
+        double expected = 200;
+        double actual = classObject.printprice();
+
+        Assert.AreEqual(expected, actual);
+
+    }
+
+    [TestMethod]
+    public void TestMethod18()
+    {
+        int NumberOfLiters = 100;
+        int NumberOfBottle = 10;
+        int Price = 20;
+        int NumberOfEmployee = 300;
+        int Volumeone = 10;
+
+
+        Sale classObject = new Sale(NumberOfLiters, NumberOfBottle, Price, NumberOfEmployee, Volumeone);
+
+        double expected = 90;
+        double actual = classObject.salesontheday();
+
+        Assert.AreEqual(expected, actual);
+
+    }
+
+    [TestMethod]
+    public void TestMethod19()
+    {
+        int NumberOfLiters = 100;
+        int NumberOfBottle = 10;
+        int Price = 20;
+        int NumberOfEmployee = 300;
+        int Volumeone = 10;
+
+
+        Sale classObject = new Sale(NumberOfLiters, NumberOfBottle, Price, NumberOfEmployee, Volumeone);
+
+        double expected = 10;
+        double actual = classObject.printvolume();
+
+        Assert.AreEqual(expected, actual);
+
+    }
+
+    [TestMethod]
+    public void TestMethod20()
+    {
+        int NumberOfLiters = 100;
+        int NumberOfBottle = 10;
+        int Price = 20;
+        int NumberOfEmployee = 300;
+        int Volumeone = 10;
+
+
+        Sale classObject = new Sale(NumberOfLiters, NumberOfBottle, Price, NumberOfEmployee, Volumeone);
+
+        double expected = 280;
+        double actual = classObject.printnumberofpeople();
+
+        Assert.AreEqual(expected, actual);
+
+    }
+
+    [TestMethod]
+    public void TestMethod21()
+    {
+        int NumberOfLiters = 100;
+        int NumberOfBottle = 10;
+        int Price = 20;
+        int NumberOfEmployee = 300;
+        int Volumeone = 10;
+
+
+        Sale classObject = new Sale(NumberOfLiters, NumberOfBottle, Price, NumberOfEmployee, Volumeone);
+
+        double expected = 320;
+        double actual = classObject.printprofit();
+
+        Assert.AreEqual(expected, actual);
+
+    }
+
+
+
 }

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SixTaskDraft", "SixTaskDraf
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SixTaskTestDraft", "..\six.task.test\SixTaskTestDraft.csproj", "{60F5A963-7CDE-488A-A401-4F654283936B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tumakoww", "..\tumakoww\tumakoww.csproj", "{0C094FC4-756E-484C-9106-E38ECADA52BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{60F5A963-7CDE-488A-A401-4F654283936B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60F5A963-7CDE-488A-A401-4F654283936B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60F5A963-7CDE-488A-A401-4F654283936B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C094FC4-756E-484C-9106-E38ECADA52BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C094FC4-756E-484C-9106-E38ECADA52BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C094FC4-756E-484C-9106-E38ECADA52BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C094FC4-756E-484C-9106-E38ECADA52BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

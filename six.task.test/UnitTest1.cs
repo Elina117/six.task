@@ -136,7 +136,7 @@ public class UnitTest1
         int MeltingPoint = 50;
 
 
-        Boiling classObject = new Boiling(VolumeLiters, MaxTemp, ValumeOfBottle, BoilingTime, MeltingPoint);
+        Boiling classObject = new 3(VolumeLiters, MaxTemp, ValumeOfBottle, BoilingTime, MeltingPoint);
 
         double expected = 125;
         double actual = classObject.printneedtemp();
@@ -317,7 +317,7 @@ public class UnitTest1
         double actual = classObject.printtimeforpour();
 
         Assert.AreEqual(expected, actual);
-
+        4
     }
 
     [TestMethod]

@@ -71,6 +71,7 @@ namespace SixTaskDraft
 
         public Pour(int NumberOfLiters, int NumberOfBottle, int PriceOfBottle, int NumberOfEmployee, int ValumeBottle) : base(NumberOfLiters, NumberOfBottle, PriceOfBottle)
         {
+            
             int var = this.NumberOfEmployee;
 
             this.NumberOfEmployee = NumberOfEmployee;
